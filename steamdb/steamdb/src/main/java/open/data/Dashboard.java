@@ -1,4 +1,4 @@
-package steamdb;
+package open.data;
 
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
@@ -35,3 +35,4 @@ public class Dashboard {
         return root;
     }
 }
+

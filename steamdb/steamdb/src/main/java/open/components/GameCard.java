@@ -1,4 +1,4 @@
-package steamdb.components;
+package open.components;
 
 import javafx.scene.layout.VBox;
 import javafx.scene.image.Image;
@@ -6,9 +6,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.geometry.Pos;
-
-import paagbi.GameInfo;
-
+import open.data.SteamAPI;
+import open.model.GameInfo;
 public class GameCard extends VBox {
 
     public GameCard(GameInfo info, int maxPlayers) {

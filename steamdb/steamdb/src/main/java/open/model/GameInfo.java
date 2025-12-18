@@ -1,4 +1,4 @@
-package steamdb.models;
+package open.model;
 
 public class GameInfo {
     public String name;

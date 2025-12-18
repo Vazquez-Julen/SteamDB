@@ -1,8 +1,10 @@
-package steamdb;
+package open.data;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+
+import open.model.GameInfo;
 
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;

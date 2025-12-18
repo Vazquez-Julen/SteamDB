@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="root" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="open.data.DashboardController">
+
+    <top>
+        <Label fx:id="headerLabel" text="Merkatuaren Laburpena"
+               style="-fx-font-size: 32px; -fx-font-weight: bold;"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <HBox fx:id="contentHBox" spacing="30" BorderPane.alignment="CENTER">
+            <VBox fx:id="leftColumn" spacing="20"/>
+            <VBox fx:id="rightColumn" spacing="20"/>
+        </HBox>
+    </center>
+
+</BorderPane>
