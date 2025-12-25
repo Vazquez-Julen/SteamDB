@@ -24,7 +24,8 @@ public class SteamDBPController {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/open/data/Dashboard.fxml"));
                 Stage stage = (Stage) players.getScene().getWindow();
-                stage.setScene(new Scene(root));
+                Scene scene = new Scene(root, 1200, 800);
+                stage.setScene(scene);
                 stage.show();
             } catch (IOException ex) {
                 ex.printStackTrace();
@@ -36,7 +37,8 @@ public class SteamDBPController {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/open/data/Shop.fxml"));
                 Stage stage = (Stage) shop.getScene().getWindow();
-                stage.setScene(new Scene(root));
+                Scene scene = new Scene(root, 1200, 800);
+                stage.setScene(scene);
                 stage.show();
             } catch (IOException ex) {
                 ex.printStackTrace();

@@ -72,4 +72,47 @@ public class SteamAPI {
             return null;
         }
     }
+
+    public static String getGamePrice(int appId) {
+        try {
+            // Agregar parámetro cc=ES para forzar precios en euros
+            URL url = new URL(STORE_URL + appId + "&cc=ES");
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+
+            InputStreamReader reader = new InputStreamReader(connection.getInputStream());
+            JsonObject json = JsonParser.parseReader(reader)
+                    .getAsJsonObject()
+                    .getAsJsonObject(String.valueOf(appId));
+
+            if (!json.get("success").getAsBoolean()) {
+                return "Ez dago eskuragarri";
+            }
+
+            JsonObject data = json.getAsJsonObject("data");
+            
+            // Verificar si es gratis
+            if (data.has("is_free") && data.get("is_free").getAsBoolean()) {
+                return "Doan";
+            }
+
+            // Obtener precio
+            if (data.has("price_overview")) {
+                JsonObject priceOverview = data.getAsJsonObject("price_overview");
+                int finalPrice = priceOverview.get("final").getAsInt();
+                
+                // Convertir centavos a euros
+                double price = finalPrice / 100.0;
+                
+                // Siempre mostrar en euros
+                return String.format("%.2f €", price);
+            }
+
+            return "Ez dago eskuragarri";
+
+        } catch (Exception e) {
+            System.out.println("Errorea prezioak lortzean: " + e.getMessage());
+            return "Ez dago eskuragarri";
+        }
+    }
 }

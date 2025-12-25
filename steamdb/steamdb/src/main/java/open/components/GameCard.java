@@ -12,7 +12,11 @@ import open.model.GameInfo;
 
 public class GameCard extends VBox {
 
-    public GameCard(GameInfo info, int appId) { // ya no necesitamos maxPlayers
+    public GameCard(GameInfo info, int appId) {
+        this(info, appId, false); // Por defecto muestra jugadores
+    }
+
+    public GameCard(GameInfo info, int appId, boolean isShop) {
         setSpacing(10);
         setAlignment(Pos.CENTER);
         setStyle("-fx-background-color: #ffffff; " +
@@ -36,10 +40,19 @@ public class GameCard extends VBox {
         Label genreLabel = new Label(info.genre);
         genreLabel.setStyle("-fx-font-size: 14px; -fx-text-fill: #666666;");
 
-        int players = SteamAPI.getCurrentPlayers(appId);
-        Label playersLabel = new Label("Jokalari linean: " + players);
-        playersLabel.setStyle("-fx-font-size: 14px; -fx-text-fill: #009688; -fx-font-weight: bold;");
+        Label infoLabel;
+        if (isShop) {
+            // Mostrar precio para Shop
+            String price = SteamAPI.getGamePrice(appId);
+            infoLabel = new Label("Prezioa: " + price);
+            infoLabel.setStyle("-fx-font-size: 14px; -fx-text-fill: #009688; -fx-font-weight: bold;");
+        } else {
+            // Mostrar jugadores para Dashboard
+            int players = SteamAPI.getCurrentPlayers(appId);
+            infoLabel = new Label("Jokalari linean: " + players);
+            infoLabel.setStyle("-fx-font-size: 14px; -fx-text-fill: #009688; -fx-font-weight: bold;");
+        }
 
-        getChildren().addAll(imageView, nameLabel, genreLabel, playersLabel);
+        getChildren().addAll(imageView, nameLabel, genreLabel, infoLabel);
     }
 }
