@@ -47,8 +47,8 @@ public class ShopController {
             // Obtener el Stage actual desde el botón
             Stage stage = (Stage) backButton.getScene().getWindow();
 
-            // Crear la nueva escena con tamaño 1200x800
-            Scene scene = new Scene(root, 1200, 800);
+            // Crear la nueva escena con tamaño 1000x600
+            Scene scene = new Scene(root, 1000, 600);
 
             // Establecer la escena y mostrar
             stage.setScene(scene);
