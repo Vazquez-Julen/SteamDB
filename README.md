@@ -44,7 +44,7 @@ Hasierako pantaila, erabiltzaileak aplikazioko atal nagusiak aukeratzeko aukera 
 - **Players**: jokalarien informazioa ikusteko
 - **Shop**: denda eta prezioen informazioa ikusteko
 
-<img width="1247" height="783" alt="image" src="https://github.com/user-attachments/assets/f924c91a-f8a2-4633-b31d-1689d701c469" />
+<img width="1246" height="780" alt="image" src="https://github.com/user-attachments/assets/f200c08a-c97b-448f-992b-f471f136804d" />
 
 ---
 
