@@ -78,7 +78,7 @@ Denda-atalean jokoen prezioak bistaratzen dira:
 Aplikazioak **bilaketa dinamikoa** erabiltzen du.  
 Erabiltzaileak testu-eremuan idazten duen heinean, jokoen zerrenda automatikoki eguneratzen da, izenarekin bat datozen emaitzak soilik erakutsiz.
 
-*aqui iria una foto*
+![OpenDataSteamDB](https://github.com/user-attachments/assets/c26ca21a-13c6-4ea0-8355-a900cfc01450)
 
 ---
 
