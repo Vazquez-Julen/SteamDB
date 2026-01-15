@@ -15,12 +15,12 @@ public class GameCard extends VBox {
     private final int appId;
     private final boolean isShop;
 
-    // Constructor para Players
+    // Konstruktorea Players
     public GameCard(GameInfo info, int appId) {
         this(info, appId, false);
     }
 
-    // Constructor para Shop
+    // Konstruktorea Shop
     public GameCard(GameInfo info, int appId, boolean isShop) {
         this.info = info;
         this.appId = appId;
@@ -41,7 +41,7 @@ public class GameCard extends VBox {
             "-fx-border-width: 2px;"
         );
 
-        // Imagen
+        // Argazkia
         ImageView imageView = new ImageView();
         imageView.setFitWidth(200);
         imageView.setFitHeight(100);
@@ -52,7 +52,7 @@ public class GameCard extends VBox {
         } catch (Exception ignored) {
         }
 
-        // Nombre
+        // Izena
         Label nameLabel = new Label(info.name);
         nameLabel.setWrapText(true);
         nameLabel.setAlignment(Pos.CENTER);
@@ -62,7 +62,7 @@ public class GameCard extends VBox {
             "-fx-font-weight: bold;"
         );
 
-        // Género
+        
         Label genreLabel = new Label(info.genre);
         genreLabel.setStyle(
             "-fx-text-fill: #a9c7e8;" +
@@ -97,7 +97,7 @@ public class GameCard extends VBox {
         }
     }
 
-    // 🔑 Necesario para la búsqueda
+    // Bilaketa egiteko
     public GameInfo getGameInfo() {
         return info;
     }
