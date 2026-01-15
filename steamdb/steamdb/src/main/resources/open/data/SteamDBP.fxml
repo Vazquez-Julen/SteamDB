@@ -34,7 +34,7 @@
                     <HBox spacing="40" alignment="CENTER">
 
                         <Button fx:id="players"
-                                text="Players"
+                                text="Jokalariak"
                                 prefWidth="180"
                                 prefHeight="50"
                                 style="-fx-background-color: linear-gradient(to bottom, #1b3a5a, #0f2a44);
@@ -47,7 +47,7 @@
                                        -fx-border-width: 2px;" />
 
                         <Button fx:id="shop"
-                                text="Shop"
+                                text="Denda"
                                 prefWidth="180"
                                 prefHeight="50"
                                 style="-fx-background-color: linear-gradient(to bottom, #1b3a5a, #0f2a44);
