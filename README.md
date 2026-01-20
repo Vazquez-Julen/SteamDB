@@ -146,7 +146,7 @@ Etorkizunean, arazo hau hobetzeko aukera hauek aztertzea aurreikusten da:
 
 ---
 
-## 📚 Erabilitako iturriak (Fuentes)
+## 📚 Erabilitako iturriak
 
 Proiektua garatzeko eta informazioa lortzeko honako iturri ofizialak erabili dira:
 
