@@ -48,7 +48,7 @@ Hasierako pantaila, erabiltzaileak aplikazioko atal nagusiak aukeratzeko aukera 
 
 ---
 
-### 👥 Players (Dashboard)
+### 👥 Jokalariak
 Pantaila honetan jokoen informazio orokorra erakusten da:
 - Jokoaren izena  
 - Generoa  
@@ -62,7 +62,7 @@ Bilaketa-eremu baten bidez, erabiltzaileak jokoak filtratu ditzake idazten duen 
 
 ---
 
-### 🛒 Shop
+### 🛒 Denda
 Denda-atalean jokoen prezioak bistaratzen dira:
 - Jokoa doakoa den ala ez  
 - Prezioa eurotan  
